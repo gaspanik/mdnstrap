@@ -1,0 +1,43 @@
+doctype
+head
+	meta(charset="UTF-8")
+	meta(name="viewport" content="width=device-width, initial-scale=1.0")
+	title Bootstrap Demo
+	link(rel="stylesheet", href="css/bootstrap.css")
+	link(rel="stylesheet", href="css/bootstrap-accessibility.css")
+	style.
+		body {margin-top:80px}
+body
+	nav(role="navigation").navbar.navbar-default.navbar-inverse.navbar-fixed-top
+		.container
+			.navbar-header
+				button(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse").navbar-toggle
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a(href="index.html" ).navbar-brand Brand
+			.collapse.navbar-collapse.navbar-ex1-collapse
+				ul.nav.navbar-nav
+					li.active: a(href="index.html") Home
+					li: a(href="about.html") About
+				ul.nav.navbar-nav.navbar-right
+					li: a(href="#") Link
+					li.dropdown
+						a(href="#", data-toggle="dropdown").dropdown-toggle Dropdown <b class="caret"></b>
+						ul.dropdown-menu
+							li: a(href="#") Action
+							li: a(href="#") Another action
+
+	block content
+
+script(src='js/jquery.min.js')
+script(src='js/bootstrap.min.js')
+script(src='js/bootstrap-accessibility.min.js')
+script(src='js/jquery.bootstrap-autohidingnavbar.min.js')
+script(src='js/holder.js')
+
+script.
+	$('.navbar-fixed-top').autoHidingNavbar({
+		"animationDuration": 400
+	});

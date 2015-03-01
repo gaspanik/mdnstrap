@@ -1,0 +1,30 @@
+{
+  "name": "mdnstrap",
+  "version": "1.0.0",
+  "description": "Modified Bootstrap 3 Official + Jade template w/ Gulpjs.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "postinstall": "bower install; sh bootstrap.sh;",
+    "concat": "gulp scripts"
+  },
+  "author": "Masaaki Komori",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.2.1",
+    "gulp": "^3.8.11",
+    "gulp-changed": "^1.1.1",
+    "gulp-concat": "^2.5.2",
+    "gulp-csso": "^1.0.0",
+    "gulp-jade": "^1.0.0",
+    "gulp-less": "^3.0.1",
+    "gulp-load-plugins": "^0.8.1",
+    "gulp-prettify": "^0.3.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-shell": "^0.3.0",
+    "gulp-sourcemaps": "^1.5.0",
+    "gulp-uglify": "^1.1.0",
+    "marked": "^0.3.3",
+    "ngrok": "^0.1.99"
+  }
+}
