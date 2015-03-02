@@ -28,7 +28,7 @@ gulp.task('ngrok', function() {
 
 gulp.task('jade', function() {
   gulp.src('src/templates/*.jade')
-    .pipe($.changed('dist', {extension: '.html'}))
+    // .pipe($.changed('dist', {extension: '.html'}))
     .pipe($.jade())
     .pipe(gulp.dest('dist'))
     //  If you need prettify HTML, uncomment below 2 lines.
